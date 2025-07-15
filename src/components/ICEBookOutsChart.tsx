@@ -48,9 +48,14 @@ const ICEBookOutsChart: React.FC = () => {
   });
 
   useEffect(() => {
-    import('../data.json').then((jsonData) => {
-      setData(jsonData.default);
-    });
+    import('../data.json')
+      .then((jsonData) => {
+        console.log('Data loaded:', jsonData.default);
+        setData(jsonData.default);
+      })
+      .catch((error) => {
+        console.error('Error loading data:', error);
+      });
   }, []);
 
   const formatDate = (dateStr: string): string => {
@@ -229,7 +234,11 @@ const ICEBookOutsChart: React.FC = () => {
   if (!data || !chartData) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-lg text-gray-600">Loading data...</div>
+        <div className="text-lg text-gray-600">
+          Loading data... 
+          {!data && <div className="text-sm text-red-500 mt-2">Data not loaded</div>}
+          {data && !chartData && <div className="text-sm text-red-500 mt-2">Chart data not processed</div>}
+        </div>
       </div>
     );
   }
