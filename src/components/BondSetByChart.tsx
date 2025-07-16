@@ -40,8 +40,7 @@ const BondSetByChart: React.FC = () => {
   });
 
   useEffect(() => {
-    // Force fresh import by adding timestamp to bypass cache
-    import('../data.json?t=' + Date.now())
+    import('../data.json')
       .then((jsonData) => {
         console.log('Bond Set By Data loaded:', jsonData.default);
         setData(jsonData.default);
@@ -224,15 +223,15 @@ const BondSetByChart: React.FC = () => {
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-gray-900 mb-2">
-          Bond Set By Authority
+          Who is setting bonds for those who bonded out?
         </h2>
         <p className="text-gray-600 mb-6">
-          Breakdown of who set bonds for individuals who bonded out - Immigration Judge vs ICE
+          Breakdown of who set the bond for individuals who bonded out - Immigration Judge or ICE
         </p>
         
         <div className="mb-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-4">
-            Filter by Criminality Level:
+            Filter by Criminality:
           </h3>
           <div className="flex flex-wrap gap-4">
             {Object.entries(filterLabels).map(([key, label]) => (

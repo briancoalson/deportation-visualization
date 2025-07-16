@@ -47,8 +47,7 @@ const ICEBookOutsChart: React.FC = () => {
   });
 
   useEffect(() => {
-    // Force fresh import by adding timestamp to bypass cache
-    import('../data.json?t=' + Date.now())
+    import('../data.json')
       .then((jsonData) => {
         console.log('Data loaded:', jsonData.default);
         console.log('Date range:', jsonData.default.book_outs.map(item => item.date));
@@ -248,15 +247,15 @@ const ICEBookOutsChart: React.FC = () => {
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-gray-900 mb-2">
-          ICE Final Book Outs Dashboard
+          ICE Book Outs Dashboard
         </h2>
         <p className="text-gray-600 mb-6">
-          Interactive visualization of ICE final book outs by release reason over time
+          Interactive visualization of how people leave ICE custody
         </p>
         
         <div className="mb-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-4">
-            Filter by Criminality Level:
+            Filter by Criminality:
           </h3>
           <div className="flex flex-wrap gap-4">
             {Object.entries(filterLabels).map(([key, label]) => (
