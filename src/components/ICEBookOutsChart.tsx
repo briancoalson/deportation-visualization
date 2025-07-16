@@ -10,6 +10,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import * as XLSX from 'xlsx';
+import { formatDate } from '../helpers/utils';
 
 ChartJS.register(
   CategoryScale,
@@ -57,16 +58,7 @@ const ICEBookOutsChart: React.FC = () => {
         console.error('Error loading data:', error);
       });
   }, []);
-
-  const formatDate = (dateStr: string): string => {
-    // Parse the date string directly to avoid timezone conversion issues
-    const [year, month] = dateStr.split('-');
-    const date = new Date(parseInt(year), parseInt(month) - 1, 1);
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
-      month: 'short' 
-    });
-  };
+  
 
   const categoryLabels = {
     release_to_removed: 'Release to Remove (Deported)',
