@@ -14,7 +14,7 @@
       "other": {"convicted_criminal": 1, "pending_charges": 0, "other": 0 }
     },
     {
-      "date": "2023-11-01",
+      "date": "2024-11-01",
       "bonded_out": {"convicted_criminal": 191, "pending_charges": 247, "other": 215}, 
       "order_of_recog": {"convicted_criminal": 138, "pending_charges": 244, "other": 1098 },
       "order_of_supervision": {"convicted_criminal": 194, "pending_charges": 101, "other": 148 },
@@ -27,7 +27,7 @@
       "other": {"convicted_criminal": 1, "pending_charges": 0, "other": 0 }
     },
     {
-      "date": "2023-12-01",
+      "date": "2024-12-01",
       "bonded_out": {"convicted_criminal": 232, "pending_charges": 326, "other": 248}, 
       "order_of_recog": {"convicted_criminal": 161, "pending_charges": 359, "other": 589 },
       "order_of_supervision": {"convicted_criminal": 179, "pending_charges": 81, "other": 171 },
@@ -40,7 +40,7 @@
       "other": {"convicted_criminal": 1, "pending_charges": 0, "other": 0 }
     },
     {
-      "date": "2024-01-01",
+      "date": "2025-01-01",
       "bonded_out": {"convicted_criminal": 158, "pending_charges": 269, "other": 250}, 
       "order_of_recog": {"convicted_criminal": 157, "pending_charges": 326, "other": 542 },
       "order_of_supervision": {"convicted_criminal": 237, "pending_charges": 135, "other": 162 },
@@ -53,7 +53,7 @@
       "other": {"convicted_criminal": 0, "pending_charges": 1, "other": 3 }
     },
     {
-      "date": "2024-02-01",
+      "date": "2025-02-01",
       "bonded_out": {"convicted_criminal": 187, "pending_charges": 277, "other": 339}, 
       "order_of_recog": {"convicted_criminal": 55, "pending_charges": 98, "other": 174 },
       "order_of_supervision": {"convicted_criminal": 38, "pending_charges": 24, "other": 45 },
@@ -66,7 +66,7 @@
       "other": {"convicted_criminal": 0, "pending_charges": 1, "other": 1 }
     },
     {
-      "date": "2024-03-01",
+      "date": "2025-03-01",
       "bonded_out": {"convicted_criminal": 345, "pending_charges": 531, "other": 915}, 
       "order_of_recog": {"convicted_criminal": 16, "pending_charges": 37, "other": 46 },
       "order_of_supervision": {"convicted_criminal": 17, "pending_charges": 8, "other": 36 },
@@ -79,7 +79,7 @@
       "other": {"convicted_criminal": 3, "pending_charges": 3, "other": 2 }
     },
     {
-      "date": "2024-04-01",
+      "date": "2025-04-01",
       "bonded_out": {"convicted_criminal": 500, "pending_charges": 810, "other": 1202}, 
       "order_of_recog": {"convicted_criminal": 20, "pending_charges": 32, "other": 70 },
       "order_of_supervision": {"convicted_criminal": 21, "pending_charges": 15, "other": 73 },
@@ -92,7 +92,7 @@
       "other": {"convicted_criminal": 1, "pending_charges": 2, "other": 2 }
     },
     {
-      "date": "2024-05-01",
+      "date": "2025-05-01",
       "bonded_out": {"convicted_criminal": 426, "pending_charges": 916, "other": 1094}, 
       "order_of_recog": {"convicted_criminal": 18, "pending_charges": 39, "other": 85 },
       "order_of_supervision": {"convicted_criminal": 11, "pending_charges": 18, "other": 107 },
@@ -105,7 +105,7 @@
       "other": {"convicted_criminal": 2, "pending_charges": 1, "other": 3 }
     },
     {
-      "date": "2024-06-01",
+      "date": "2025-06-01",
       "bonded_out": {"convicted_criminal": 404, "pending_charges": 770, "other": 1160}, 
       "order_of_recog": {"convicted_criminal": 16, "pending_charges": 27, "other": 82 },
       "order_of_supervision": {"convicted_criminal": 23, "pending_charges": 10, "other": 33 },
