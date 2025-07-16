@@ -66,15 +66,15 @@ const ICEBookOutsChart: React.FC = () => {
   };
 
   const categoryLabels = {
+    release_to_removed: 'Release to Remove (Deported)',
     bonded_out: 'Bonded Out',
-    order_of_recog: 'Order of Recognition',
-    order_of_supervision: 'Order of Supervision',
     paroled: 'Paroled',
-    proceedings_terminated: 'Proceedings Terminated',
-    release_to_removed: 'Release to Removed',
-    relief_granted: 'Relief Granted',
-    transferred_to_agency: 'Transferred to Agency',
     transferred: 'Transferred',
+    transferred_to_agency: 'Transferred to Agency',
+    order_of_recog: 'Order of Recognizance',
+    order_of_supervision: 'Order of Supervision',
+    proceedings_terminated: 'Proceedings Terminated',
+    relief_granted: 'Relief Granted',
     other: 'Other',
   };
 
@@ -82,9 +82,9 @@ const ICEBookOutsChart: React.FC = () => {
     bonded_out: '#3B82F6',
     order_of_recog: '#10B981',
     order_of_supervision: '#F59E0B',
-    paroled: '#EF4444',
+    paroled: '#a55f0fff',
     proceedings_terminated: '#8B5CF6',
-    release_to_removed: '#F97316',
+    release_to_removed: '#e20f0fff',
     relief_granted: '#06B6D4',
     transferred_to_agency: '#84CC16',
     transferred: '#EC4899',
