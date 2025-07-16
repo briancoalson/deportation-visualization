@@ -10,6 +10,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import * as XLSX from 'xlsx';
+import { formatDate } from '../helpers/utils';
 
 ChartJS.register(
   CategoryScale,
@@ -50,13 +51,7 @@ const BondSetByChart: React.FC = () => {
       });
   }, []);
 
-  const formatDate = (dateStr: string): string => {
-    const date = new Date(dateStr);
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
-      month: 'short' 
-    });
-  };
+  
 
   const categoryLabels = {
     bond_set_by_IJ: 'Immigration Judge',
