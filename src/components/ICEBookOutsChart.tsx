@@ -59,7 +59,9 @@ const ICEBookOutsChart: React.FC = () => {
   }, []);
 
   const formatDate = (dateStr: string): string => {
-    const date = new Date(dateStr);
+    // Parse the date string directly to avoid timezone conversion issues
+    const [year, month] = dateStr.split('-');
+    const date = new Date(parseInt(year), parseInt(month) - 1, 1);
     return date.toLocaleDateString('en-US', { 
       year: 'numeric', 
       month: 'short' 
