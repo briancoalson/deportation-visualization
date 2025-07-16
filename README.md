@@ -77,9 +77,9 @@ The application reads data from `src/data.json`. The JSON structure includes:
 
 ```
 src/
-├── components/
-│   └── ICEBookOutsChart.tsx    # Main chart component
-├── data.json                   # Data source
+├── components/                 # Different charts and React components
+│   └── ICEBookOutsChart.tsx    
+├── data.json                   # Data source (manually updated from published data)
 ├── App.tsx                     # Root component
 ├── main.tsx                    # Application entry point
 └── index.css                   # Global styles
