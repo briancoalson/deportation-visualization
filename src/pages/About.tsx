@@ -16,16 +16,21 @@ const About: React.FC = () => {
             
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Data Sources & Methodology</h2>
             <p className="text-gray-600 mb-6">
-              All data is taken directly from the latest reports published by ICE.  The source data is available <a href="https://www.ice.gov/detain/detention-management#stats">here</a>.  We look through published data to find interesting trends and then display these visually in our dashboards.
+              All data is taken directly from the latest reports published by ICE.  The source data is available <a className="text-blue-700" href="https://www.ice.gov/detain/detention-management#stats">here</a>.  We look through published data to find interesting trends and then display these visually in our dashboards.
             </p>
                         
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Future Improvements</h2>
-            <p className="text-gray-600 mb-6">
-              <ul>
-                <li>Add data from other sources such as <a href="https://deportationdata.org/">Deportation Data Project</a>. </li>
-                <li>Automatically import data from ICE statistics as they are released.</li>
-              </ul>
-            </p>
+            <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
+
+
+              <li>Add data from other sources such as <a className="text-blue-700" href="https://deportationdata.org/">Deportation Data Project</a>.</li>
+
+
+              <li>Automatically import data from ICE statistics as they are released.</li>
+
+
+            </ul>
+            
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8">
               <h3 className="text-lg font-semibold text-blue-900 mb-2">Contact Information</h3>
               <p className="text-blue-700">
