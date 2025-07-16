@@ -33,8 +33,8 @@ const About: React.FC = () => {
             
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8">
               <h3 className="text-lg font-semibold text-blue-900 mb-2">Contact Information</h3>
-              <p className="text-blue-700">
-                Coming Soon
+              <p className="text-gray-600 mb-6">
+                Visit our Github repository at <a className="text-blue-700" href="https://github.com/briancoalson/deportation-visualization">https://github.com/briancoalson/deportation-visualization</a> to help contribute, or reach out to the team at <a className="text-blue-700" href="mailto:ICEAnalytics@briancoalson.com">ICEAnalytics@briancoalson.com</a>
               </p>
             </div>
           </div>
