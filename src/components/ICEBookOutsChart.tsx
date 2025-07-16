@@ -47,9 +47,11 @@ const ICEBookOutsChart: React.FC = () => {
   });
 
   useEffect(() => {
-    import('../data.json')
+    // Force fresh import by adding timestamp to bypass cache
+    import('../data.json?t=' + Date.now())
       .then((jsonData) => {
         console.log('Data loaded:', jsonData.default);
+        console.log('Date range:', jsonData.default.book_outs.map(item => item.date));
         setData(jsonData.default);
       })
       .catch((error) => {
