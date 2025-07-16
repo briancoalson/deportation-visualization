@@ -1,5 +1,6 @@
 import React from 'react';
 import ICEBookOutsChart from '../components/ICEBookOutsChart';
+import BondSetByChart from '../components/BondSetByChart';
 
 const Dashboards: React.FC = () => {
   return (
@@ -27,6 +28,20 @@ const Dashboards: React.FC = () => {
               </div>
               <div className="p-0">
                 <ICEBookOutsChart />
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <div className="p-6 border-b border-gray-200">
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">
+                  Bond Set By Authority
+                </h2>
+                <p className="text-gray-600">
+                  Analysis of who set bonds for individuals who bonded out - Immigration Judge vs ICE
+                </p>
+              </div>
+              <div className="p-0">
+                <BondSetByChart />
               </div>
             </div>
             
