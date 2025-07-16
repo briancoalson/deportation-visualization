@@ -245,72 +245,70 @@ const ICEBookOutsChart: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            ICE Final Book Outs Dashboard
-          </h1>
-          <p className="text-gray-600 mb-8">
-            Interactive visualization of ICE final book outs by release reason over time
-          </p>
-          
-          <div className="mb-8">
-            <h2 className="text-lg font-semibold text-gray-800 mb-4">
-              Filter by Criminality Level:
-            </h2>
-            <div className="flex flex-wrap gap-4">
-              {Object.entries(filterLabels).map(([key, label]) => (
-                <label
-                  key={key}
-                  className="flex items-center space-x-3 cursor-pointer group"
-                >
-                  <div className="relative">
-                    <input
-                      type="checkbox"
-                      checked={selectedFilters[key as keyof typeof selectedFilters]}
-                      onChange={() => handleFilterChange(key as keyof typeof selectedFilters)}
-                      className="sr-only"
-                    />
-                    <div
-                      className={`w-5 h-5 rounded border-2 transition-all duration-200 flex items-center justify-center ${
-                        selectedFilters[key as keyof typeof selectedFilters]
-                          ? 'bg-blue-600 border-blue-600'
-                          : 'bg-white border-gray-300 group-hover:border-blue-400'
-                      }`}
-                    >
-                      {selectedFilters[key as keyof typeof selectedFilters] && (
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      )}
-                    </div>
+    <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <div className="mb-6">
+        <h2 className="text-xl font-semibold text-gray-900 mb-2">
+          ICE Final Book Outs Dashboard
+        </h2>
+        <p className="text-gray-600 mb-6">
+          Interactive visualization of ICE final book outs by release reason over time
+        </p>
+        
+        <div className="mb-6">
+          <h3 className="text-lg font-semibold text-gray-800 mb-4">
+            Filter by Criminality Level:
+          </h3>
+          <div className="flex flex-wrap gap-4">
+            {Object.entries(filterLabels).map(([key, label]) => (
+              <label
+                key={key}
+                className="flex items-center space-x-3 cursor-pointer group"
+              >
+                <div className="relative">
+                  <input
+                    type="checkbox"
+                    checked={selectedFilters[key as keyof typeof selectedFilters]}
+                    onChange={() => handleFilterChange(key as keyof typeof selectedFilters)}
+                    className="sr-only"
+                  />
+                  <div
+                    className={`w-5 h-5 rounded border-2 transition-all duration-200 flex items-center justify-center ${
+                      selectedFilters[key as keyof typeof selectedFilters]
+                        ? 'bg-blue-600 border-blue-600'
+                        : 'bg-white border-gray-300 group-hover:border-blue-400'
+                    }`}
+                  >
+                    {selectedFilters[key as keyof typeof selectedFilters] && (
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    )}
                   </div>
-                  <span className="text-gray-700 font-medium group-hover:text-blue-600 transition-colors duration-200">
-                    {label}
-                  </span>
-                </label>
-              ))}
-            </div>
+                </div>
+                <span className="text-gray-700 font-medium group-hover:text-blue-600 transition-colors duration-200">
+                  {label}
+                </span>
+              </label>
+            ))}
           </div>
+        </div>
 
-          <div className="mb-6">
-            <button
-              onClick={downloadExcel}
-              className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors duration-200 shadow-sm hover:shadow-md"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              Download Excel File
-            </button>
-          </div>
+        <div className="mb-6">
+          <button
+            onClick={downloadExcel}
+            className="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors duration-200 shadow-sm hover:shadow-md"
+          >
+            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Download Excel File
+          </button>
+        </div>
+      </div>
 
-          <div className="bg-gray-50 rounded-lg p-4">
-            <div style={{ height: '500px' }}>
-              <Bar data={chartData} options={options} />
-            </div>
-          </div>
+      <div className="bg-gray-50 rounded-lg p-4">
+        <div style={{ height: '500px' }}>
+          <Bar data={chartData} options={options} />
         </div>
       </div>
     </div>

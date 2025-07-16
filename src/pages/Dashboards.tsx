@@ -17,33 +17,9 @@ const Dashboards: React.FC = () => {
           </div>
           
           <div className="grid gap-8">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-              <div className="p-6 border-b border-gray-200">
-                <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                  ICE Final Book Outs by Release Reason
-                </h2>
-                <p className="text-gray-600">
-                  Track trends in ICE final book outs categorized by release reason over time
-                </p>
-              </div>
-              <div className="p-0">
-                <ICEBookOutsChart />
-              </div>
-            </div>
+            <ICEBookOutsChart />
             
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-              <div className="p-6 border-b border-gray-200">
-                <h2 className="text-xl font-semibold text-gray-900 mb-2">
-                  Bond Set By Authority
-                </h2>
-                <p className="text-gray-600">
-                  Analysis of who set bonds for individuals who bonded out - Immigration Judge vs ICE
-                </p>
-              </div>
-              <div className="p-0">
-                <BondSetByChart />
-              </div>
-            </div>
+            <BondSetByChart />
             
             {/* Placeholder for future dashboards */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
