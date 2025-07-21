@@ -56,6 +56,38 @@ To preview the production build locally:
 npm run preview
 ```
 
+### Installation (Python utility)
+Instructions below assume you have python3 and pip installed in your local environment.  See [Python](https://www.python.org/) and [Pip](https://pypi.org/project/pip/) for installation instructions.
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd deportation-visualization
+   ```
+
+2. **Create Python virtual environment**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run Script**
+   
+   ```bash
+   python3 excel_to_json.py
+   ```
+   This should output a JSON file in the same directory with the data from the excel sheet specified in the python file.  We add this manually to the data.json used by the app for now. 
+
+When going between the python and node environments, it sometimes thinks I'm still in the python environment (venv) at the command line prompt, so I need to reset the shell environment by running 
+```bash
+exec "$SHELL"
+```
+
 ## Data Structure
 
 The application reads data from `src/data.json`. The JSON structure includes:
