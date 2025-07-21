@@ -18,12 +18,12 @@ Make sure you have the following installed on your system:
 - [Node.js](https://nodejs.org/) (version 16 or higher)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 
-### Installation
+### Installation (web application)
 
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd ice-final-book-outs-dashboard
+   cd deportation-visualization
    ```
 
 2. **Install dependencies**
