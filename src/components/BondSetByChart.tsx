@@ -23,8 +23,8 @@ ChartJS.register(
 
 interface BookOutData {
   date: string;
-  bond_set_by_IJ: { convicted_criminal: number; pending_charges: number; other: number };
-  bond_set_by_ICE: { convicted_criminal: number; pending_charges: number; other: number };
+  bond_set_by_ij: { convicted_criminal: number; pending_charges: number; other: number };
+  bond_set_by_ice: { convicted_criminal: number; pending_charges: number; other: number };
   [key: string]: any;
 }
 
@@ -54,13 +54,13 @@ const BondSetByChart: React.FC = () => {
   
 
   const categoryLabels = {
-    bond_set_by_IJ: 'Immigration Judge',
-    bond_set_by_ICE: 'ICE',
+    bond_set_by_ij: 'Immigration Judge',
+    bond_set_by_ice: 'ICE',
   };
 
   const categoryColors = {
-    bond_set_by_IJ: '#3B82F6',
-    bond_set_by_ICE: '#10B981',
+    bond_set_by_ij: '#3B82F6',
+    bond_set_by_ice: '#10B981',
   };
 
   const downloadExcel = () => {
@@ -69,16 +69,16 @@ const BondSetByChart: React.FC = () => {
     // Flatten the data for Excel format
     const flattenedData = data.book_outs.map(item => ({
       Date: item.date,
-      'Immigration Judge - Convicted Criminal': item.bond_set_by_IJ.convicted_criminal,
-      'Immigration Judge - Pending Criminal Charges': item.bond_set_by_IJ.pending_charges,
-      'Immigration Judge - Other': item.bond_set_by_IJ.other,
-      'Immigration Judge - Total': item.bond_set_by_IJ.convicted_criminal + item.bond_set_by_IJ.pending_charges + item.bond_set_by_IJ.other,
-      'ICE - Convicted Criminal': item.bond_set_by_ICE.convicted_criminal,
-      'ICE - Pending Criminal Charges': item.bond_set_by_ICE.pending_charges,
-      'ICE - Other': item.bond_set_by_ICE.other,
-      'ICE - Total': item.bond_set_by_ICE.convicted_criminal + item.bond_set_by_ICE.pending_charges + item.bond_set_by_ICE.other,
-      'Grand Total': (item.bond_set_by_IJ.convicted_criminal + item.bond_set_by_IJ.pending_charges + item.bond_set_by_IJ.other) +
-                     (item.bond_set_by_ICE.convicted_criminal + item.bond_set_by_ICE.pending_charges + item.bond_set_by_ICE.other)
+      'Immigration Judge - Convicted Criminal': item.bond_set_by_ij.convicted_criminal,
+      'Immigration Judge - Pending Criminal Charges': item.bond_set_by_ij.pending_charges,
+      'Immigration Judge - Other': item.bond_set_by_ij.other,
+      'Immigration Judge - Total': item.bond_set_by_ij.convicted_criminal + item.bond_set_by_ij.pending_charges + item.bond_set_by_ij.other,
+      'ICE - Convicted Criminal': item.bond_set_by_ice.convicted_criminal,
+      'ICE - Pending Criminal Charges': item.bond_set_by_ice.pending_charges,
+      'ICE - Other': item.bond_set_by_ice.other,
+      'ICE - Total': item.bond_set_by_ice.convicted_criminal + item.bond_set_by_ice.pending_charges + item.bond_set_by_ice.other,
+      'Grand Total': (item.bond_set_by_ij.convicted_criminal + item.bond_set_by_ij.pending_charges + item.bond_set_by_ij.other) +
+                     (item.bond_set_by_ice.convicted_criminal + item.bond_set_by_ice.pending_charges + item.bond_set_by_ice.other)
     }));
 
     // Create workbook and worksheet
