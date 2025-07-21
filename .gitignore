@@ -26,3 +26,4 @@ dist-ssr
 
 # Python script files
 util/venv/
+util/*.json
