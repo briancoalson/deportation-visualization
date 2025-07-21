@@ -1,3 +1,4 @@
+import argparse
 import pandas as pd
 import json
 
@@ -5,7 +6,12 @@ import json
 file_path = "../data/FY24_detentionStats.xlsx"
 starting_row_release_reason = 38
 ending_row_release_reason = 88
-fiscal_year = 24
+fiscal_year = 25
+
+# Create a parser for the command line arguments
+parser = argparse.ArgumentParser(description='Process command line arguments.')
+parser.add_argument('-debug', action='store_true', help='Enable debug mode')
+args = parser.parse_args()
 
 excel_data = pd.read_excel(file_path, sheet_name="Detention FY24", header=None)
 
@@ -39,7 +45,10 @@ def safe_int(val):
 # Collect data per date
 data_by_date = {date: {} for date in month_columns}
 
-# Data begins at cell 38 until cell 88 (note this is 0 indexed in pandas, so cell 1 is cell 0)
+if args.debug:
+    print(data_by_date)
+
+# pandas is 0 indexed, so we need to subtract one from the starting row
 i = starting_row_release_reason - 1
 while i < ending_row_release_reason:
     row = excel_data.iloc[i]
