@@ -24,13 +24,13 @@ ChartJS.register(
 interface BookOutData {
   date: string;
   bonded_out: { convicted_criminal: number; pending_charges: number; other: number };
-  order_of_recog: { convicted_criminal: number; pending_charges: number; other: number };
+  order_of_recognizance: { convicted_criminal: number; pending_charges: number; other: number };
   order_of_supervision: { convicted_criminal: number; pending_charges: number; other: number };
   paroled: { convicted_criminal: number; pending_charges: number; other: number };
   proceedings_terminated: { convicted_criminal: number; pending_charges: number; other: number };
-  release_to_removed: { convicted_criminal: number; pending_charges: number; other: number };
-  relief_granted: { convicted_criminal: number; pending_charges: number; other: number };
-  transferred_to_agency: { convicted_criminal: number; pending_charges: number; other: number };
+  release_to_remove: { convicted_criminal: number; pending_charges: number; other: number };
+  relief_granted_by_ij: { convicted_criminal: number; pending_charges: number; other: number };
+  "transfer_to_u.s._marshals_or_other_agency": { convicted_criminal: number; pending_charges: number; other: number };
   transferred: { convicted_criminal: number; pending_charges: number; other: number };
   other: { convicted_criminal: number; pending_charges: number; other: number };
 }
@@ -61,27 +61,27 @@ const ICEBookOutsChart: React.FC = () => {
   
 
   const categoryLabels = {
-    release_to_removed: 'Release to Remove (Deported)',
+    release_to_remove: 'Release to Remove (Deported)',
     bonded_out: 'Bonded Out',
     paroled: 'Paroled',
     transferred: 'Transferred',
-    transferred_to_agency: 'Transferred to Agency',
-    order_of_recog: 'Order of Recognizance',
+    "transfer_to_u.s._marshals_or_other_agency": 'Transferred to Agency',
+    order_of_recognizance: 'Order of Recognizance',
     order_of_supervision: 'Order of Supervision',
     proceedings_terminated: 'Proceedings Terminated',
-    relief_granted: 'Relief Granted',
+    relief_granted_by_ij: 'Relief Granted',
     other: 'Other',
   };
 
   const categoryColors = {
     bonded_out: '#3B82F6',
-    order_of_recog: '#10B981',
+    order_of_recognizance: '#10B981',
     order_of_supervision: '#F59E0B',
     paroled: '#a55f0fff',
     proceedings_terminated: '#8B5CF6',
-    release_to_removed: '#e20f0fff',
-    relief_granted: '#06B6D4',
-    transferred_to_agency: '#84CC16',
+    release_to_remove: '#e20f0fff',
+    relief_granted_by_ij: '#06B6D4',
+    "transfer_to_u.s._marshals_or_other_agency": '#84CC16',
     transferred: '#EC4899',
     other: '#6B7280',
   };
