@@ -3,8 +3,8 @@ import pandas as pd
 import json
 
 # Where to get data and info about the file (these change based on the data provided in different fiscal years)
-file_path = "../data/FY24_detentionStats.xlsx"
-starting_row_release_reason = 38
+file_path = "../data/FY25_detentionStats07172025.xlsx"
+starting_row_release_reason = 39
 ending_row_release_reason = 88
 fiscal_year = 25
 
@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser(description='Process command line arguments.')
 parser.add_argument('-debug', action='store_true', help='Enable debug mode')
 args = parser.parse_args()
 
-excel_data = pd.read_excel(file_path, sheet_name="Detention FY24", header=None)
+excel_data = pd.read_excel(file_path, sheet_name="Detention FY25", header=None)
 
 # Map month abbreviations to YYYY-MM-01 format
 starting_year = 2000 + fiscal_year - 1
@@ -27,11 +27,12 @@ month_map = {
     "Mar": f"{ending_year}-03-01",
     "Apr": f"{ending_year}-04-01",
     "May": f"{ending_year}-05-01",
-    "Jun": f"{ending_year}-06-01"
+    "Jun": f"{ending_year}-06-01",
+    "Jul": f"{ending_year}-07-01",
 }
 
 # Extract header row with month names
-header_row = excel_data.iloc[35]
+header_row = excel_data.iloc[starting_row_release_reason - 3]
 month_columns = {
     month_map[val]: idx
     for idx, val in enumerate(header_row)
