@@ -246,7 +246,7 @@ const ICEBookOutsChart: React.FC = () => {
         <p className="text-gray-600 mb-6">
           Interactive visualization of how people leave ICE custody
           <br/><br/>
-          <b>Latest Update: July 31, 2025</b> - Updated numbers for July.  Though numbers were released 7/31, it's expected that these are not the final numbers for the month of July as usually the first report in the next month has full previous month data.  You can view previous reports used to create this chart <a className="text-blue-700" href="https://github.com/briancoalson/deportation-visualization/tree/main/data"> here. </a>
+          <b>Latest Update: August 14, 2025</b> - Final numbers for July updated.  You can view previous reports used to create this chart <a className="text-blue-700" href="https://github.com/briancoalson/deportation-visualization/tree/main/data"> here. </a>
         </p>
         
         <div className="mb-6">
