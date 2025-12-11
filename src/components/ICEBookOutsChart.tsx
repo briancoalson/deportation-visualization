@@ -246,7 +246,7 @@ const ICEBookOutsChart: React.FC = () => {
         <p className="text-gray-600 mb-6">
           Interactive visualization of how people leave ICE custody
           <br/><br/>
-          <b>Latest Update: Nov 3, 2025</b> - No new data has been published since September 25.  The site for statistics is no longer being updated due to government shutdown.
+          <b>Latest Update: Dec 10, 2025</b> - Latest data after government shutdown has been uploaded.  It's unclear if the lower numbers in September are due to actual numbers being lower or if they just didn't keep track during shutdown.
         </p>
         
         <div className="mb-6">
