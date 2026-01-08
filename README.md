@@ -62,7 +62,7 @@ Instructions below assume you have python3 and pip installed in your local envir
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd deportation-visualization
+   cd deportation-visualization/util
    ```
 
 2. **Create Python virtual environment**
