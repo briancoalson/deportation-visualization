@@ -6,7 +6,7 @@ import json
 starting_row_release_reason = 39
 ending_row_release_reason = 88
 fiscal_year = 26
-file_path = "../data/FY26_detentionStats12032025.xlsx"
+file_path = "../data/FY26_detentionStats12222025.xlsx"
 
 # Create a parser for the command line arguments
 parser = argparse.ArgumentParser(description='Process command line arguments.')

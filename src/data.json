@@ -1517,7 +1517,7 @@
       "bonded_out": {
         "convicted_criminal": 113,
         "pending_charges": 284,
-        "other": 685
+        "other": 687
       },
       "bond_set_by_ice": {
         "convicted_criminal": 18,
@@ -1527,12 +1527,12 @@
       "bond_set_by_ij": {
         "convicted_criminal": 95,
         "pending_charges": 261,
-        "other": 635
+        "other": 637
       },
       "order_of_recognizance": {
         "convicted_criminal": 26,
         "pending_charges": 53,
-        "other": 210
+        "other": 209
       },
       "order_of_supervision": {
         "convicted_criminal": 59,
@@ -1542,7 +1542,7 @@
       "paroled": {
         "convicted_criminal": 5,
         "pending_charges": 12,
-        "other": 122
+        "other": 123
       },
       "proceedings_terminated": {
         "convicted_criminal": 54,
@@ -1550,24 +1550,24 @@
         "other": 94
       },
       "release_to_remove": {
-        "convicted_criminal": 10541,
-        "pending_charges": 9187,
-        "other": 14344
+        "convicted_criminal": 10558,
+        "pending_charges": 9184,
+        "other": 14348
       },
       "relief_granted_by_ij": {
-        "convicted_criminal": 92,
-        "pending_charges": 75,
+        "convicted_criminal": 93,
+        "pending_charges": 74,
         "other": 269
       },
       "transfer_to_u.s._marshals_or_other_agency": {
         "convicted_criminal": 546,
-        "pending_charges": 257,
-        "other": 98
+        "pending_charges": 258,
+        "other": 99
       },
       "transferred": {
-        "convicted_criminal": 74,
-        "pending_charges": 101,
-        "other": 109
+        "convicted_criminal": 68,
+        "pending_charges": 100,
+        "other": 105
       },
       "other": {
         "convicted_criminal": 1,
@@ -1578,64 +1578,127 @@
     {
       "date": "2025-11-01",
       "bonded_out": {
-        "convicted_criminal": 144,
-        "pending_charges": 330,
-        "other": 775
+        "convicted_criminal": 147,
+        "pending_charges": 339,
+        "other": 780
       },
       "bond_set_by_ice": {
         "convicted_criminal": 18,
-        "pending_charges": 27,
-        "other": 69
+        "pending_charges": 26,
+        "other": 63
       },
       "bond_set_by_ij": {
-        "convicted_criminal": 126,
-        "pending_charges": 303,
-        "other": 706
+        "convicted_criminal": 129,
+        "pending_charges": 313,
+        "other": 717
       },
       "order_of_recognizance": {
         "convicted_criminal": 56,
         "pending_charges": 63,
-        "other": 223
+        "other": 228
       },
       "order_of_supervision": {
-        "convicted_criminal": 93,
+        "convicted_criminal": 94,
         "pending_charges": 18,
         "other": 65
       },
       "paroled": {
         "convicted_criminal": 11,
-        "pending_charges": 11,
-        "other": 57
+        "pending_charges": 14,
+        "other": 58
       },
       "proceedings_terminated": {
-        "convicted_criminal": 32,
+        "convicted_criminal": 33,
         "pending_charges": 36,
-        "other": 84
+        "other": 85
       },
       "release_to_remove": {
-        "convicted_criminal": 9464,
-        "pending_charges": 8488,
-        "other": 13930
+        "convicted_criminal": 9817,
+        "pending_charges": 8684,
+        "other": 14222
       },
       "relief_granted_by_ij": {
-        "convicted_criminal": 71,
-        "pending_charges": 71,
-        "other": 201
+        "convicted_criminal": 75,
+        "pending_charges": 74,
+        "other": 202
       },
       "transfer_to_u.s._marshals_or_other_agency": {
-        "convicted_criminal": 448,
-        "pending_charges": 200,
-        "other": 80
+        "convicted_criminal": 461,
+        "pending_charges": 203,
+        "other": 77
       },
       "transferred": {
-        "convicted_criminal": 344,
-        "pending_charges": 445,
-        "other": 577
+        "convicted_criminal": 148,
+        "pending_charges": 162,
+        "other": 274
       },
       "other": {
         "convicted_criminal": 2,
-        "pending_charges": 1,
+        "pending_charges": 2,
         "other": 4
+      }
+    },
+    {
+      "date": "2025-12-01",
+      "bonded_out": {
+        "convicted_criminal": 111,
+        "pending_charges": 215,
+        "other": 540
+      },
+      "bond_set_by_ice": {
+        "convicted_criminal": 16,
+        "pending_charges": 13,
+        "other": 28
+      },
+      "bond_set_by_ij": {
+        "convicted_criminal": 95,
+        "pending_charges": 202,
+        "other": 512
+      },
+      "order_of_recognizance": {
+        "convicted_criminal": 23,
+        "pending_charges": 36,
+        "other": 124
+      },
+      "order_of_supervision": {
+        "convicted_criminal": 57,
+        "pending_charges": 12,
+        "other": 37
+      },
+      "paroled": {
+        "convicted_criminal": 5,
+        "pending_charges": 4,
+        "other": 21
+      },
+      "proceedings_terminated": {
+        "convicted_criminal": 32,
+        "pending_charges": 23,
+        "other": 46
+      },
+      "release_to_remove": {
+        "convicted_criminal": 4191,
+        "pending_charges": 3633,
+        "other": 6485
+      },
+      "relief_granted_by_ij": {
+        "convicted_criminal": 44,
+        "pending_charges": 36,
+        "other": 88
+      },
+      "transfer_to_u.s._marshals_or_other_agency": {
+        "convicted_criminal": 204,
+        "pending_charges": 96,
+        "other": 48
+      },
+      "transferred": {
+        "convicted_criminal": 502,
+        "pending_charges": 454,
+        "other": 800
+      },
+      "other": {
+        "convicted_criminal": 0,
+        "pending_charges": 1,
+        "other": 0
       }
     }
   ]

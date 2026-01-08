@@ -246,7 +246,7 @@ const ICEBookOutsChart: React.FC = () => {
         <p className="text-gray-600 mb-6">
           Interactive visualization of how people leave ICE custody
           <br/><br/>
-          <b>Latest Update: Dec 10, 2025</b> - Latest data after government shutdown has been uploaded.  It's unclear if the lower numbers in September are due to actual numbers being lower or if they just didn't keep track during shutdown.
+          <b>Latest Update: Jan 8, 2026</b> - Yesterday a woman was murdered by ICE in Minneapolis.  This adds to the death toll of <a href='https://www.theguardian.com/us-news/ng-interactive/2026/jan/04/ice-2025-deaths-timeline' className="text-blue-700">32 people who died in ICE custody in 2025.</a> Final data from Dec 2025 is still not available.
         </p>
         
         <div className="mb-6">
